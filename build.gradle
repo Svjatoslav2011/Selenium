@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:7.0.0-beta1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.14.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
