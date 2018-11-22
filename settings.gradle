@@ -1,2 +1,4 @@
 rootProject.name = 'artifactId'
+include 'addressbook-web-tests'
+findProject(':addressbook-web-tests')?.name = 'addressbook-web-tests '
 
