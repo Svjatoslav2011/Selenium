@@ -2,13 +2,13 @@ package ru.stqa.ptf.addressbook.Tests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import ru.stqa.ptf.addressbook.appmanager.ApplicationMAnager;
+import ru.stqa.ptf.addressbook.appmanager.ApplicationManager;
 
 import static org.testng.Assert.fail;
 
 public class TestBase {
 
-    protected final ApplicationMAnager app = new ApplicationMAnager();
+    protected final ApplicationManager app = new ApplicationManager();
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {

@@ -10,11 +10,11 @@ public class GroupCreationTests extends TestBase {
     public void testGroupCreation() {
 
         app.gotoGroups();
-        app.driver.findElement(By.name("new")).click();
-        app.initGroupCreation();
-        app.fillGroupForm(new GroupData("Y7", "Y7", "Y7"));
-        app.submitGroupCreation();
-        app.returnToGroupPage();
+        app.getGroupHelper().driver.findElement(By.name("new")).click();
+        app.getGroupHelper().initGroupCreation();
+        app.getGroupHelper().fillGroupForm(new GroupData("Y7", "Y7", "Y7"));
+        app.getGroupHelper().submitGroupCreation();
+        app.getGroupHelper().returnToGroupPage();
     }
 
 }
