@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
 
 
+
     private final GroupHelper groupHelper = new GroupHelper();
     public StringBuffer verificationErrors = new StringBuffer();
     private boolean acceptNextAlert = true;
